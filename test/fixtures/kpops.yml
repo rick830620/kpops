@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  group: MyString
+  leader: MyString
+  birth: 2013-08-16
+  member: 1
+  famous: MyString
+  exist: false
+
+two:
+  group: MyString
+  leader: MyString
+  birth: 2013-08-16
+  member: 1
+  famous: MyString
+  exist: false

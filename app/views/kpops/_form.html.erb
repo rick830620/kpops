@@ -1,0 +1,44 @@
+<%= form_for @kpop, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :group, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :group, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :leader, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :leader, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :birth, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :birth, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :member, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :member, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :famous, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :famous, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :exist, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :exist, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                kpops_path, :class => 'btn' %>
+  </div>
+<% end %>
